@@ -6,14 +6,14 @@ var WebSocketServer = require('ws').Server;
 var dnode = require('dnode');
 var wss = new WebSocketServer({ server: http });
 var async = require('async');
-
+var spreadsheet = require('node_spreadsheet');
 
 var http_port = 8020;
 var dnode_port = 8021;
 var baseURL = '/';
 
 var utils = {
-
+	spreadsheet: spreadsheet
 };
 
 app.use(express.bodyParser());

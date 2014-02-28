@@ -8,7 +8,8 @@
     "ws": "*",
     "excel": "*",
     "dnode": "*",
-    "async":"*"
+    "async":"*",
+    "node_spreadsheet":"*"
   },
   "contributors": [
     {
