@@ -13,8 +13,17 @@ var dnode_port = 8021;
 var baseURL = '/';
 
 var utils = {
-	spreadsheet: spreadsheet
+	test: function(input, cb) {
+		console.log(input)
+		process.nextTick(function(){
+			cb(input);
+		});
+	},
+	spreadsheetConvert: function(input, output, callback) {
+		spreadsheet.convert(input,output,callback);
+	}
 };
+var dserver = dnode(utils);
 
 app.use(express.bodyParser());
 // app.use(baseURL+'/', express.static('www'));
@@ -77,7 +86,7 @@ wss.on('connection',function(ws) {
 });
 
 
-var dserver = dnode(utils);
+
 dserver.listen(dnode_port);	
 http.listen(http_port);
 
