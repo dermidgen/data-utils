@@ -1,0 +1,7 @@
+.git/**
+test/**
+package.json
+README.md
+.gitignore
+Gruntfile.js
+travis.yml

@@ -1,0 +1,27 @@
+{
+  "name": "data-utils",
+  "description": "Utilities service for data manipulation, conversion, and management",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "*",
+    "ws": "*",
+    "excel": "*",
+    "dnode": "*",
+    "async":"*"
+  },
+  "contributors": [
+    {
+      "name": "Danny Graham",
+      "email": "danny@impactorder.com"
+    }
+  ],
+  "devDependencies": {
+    "vows": "*",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4"
+  },
+  "scripts": {
+    "test": "vows --spec"
+  }
+}
